@@ -13,13 +13,17 @@ import { FaPuzzlePiece } from 'react-icons/fa6';
 
 
 import { useState } from 'react';
+import { TbCashRegister } from 'react-icons/tb';
+import { HiOutlineDocumentReport } from 'react-icons/hi';
 
  const menuItems = [
-    { name: 'Dashboard', icon: <FaThLarge size={20} />, href: '#', active: true },
+    { name: 'Inicio', icon: <FaThLarge size={20} />, href: '#', active: true },
     { name: 'Niños / Expedientes', icon: <FaBaby size={20} />, href: '#' },
     { name: 'Terapias y Actividades', icon: <FaPuzzlePiece size={20} />, href: '#' },
     { name: 'Calendario / Citas', icon: <FaCalendarAlt size={20} />, href: '#' },
     { name: 'Reportes de Progreso', icon: <FaFileAlt size={20} />, href: '#' },
+    { name: 'Reportes Generales', icon: <HiOutlineDocumentReport   size={20} />, href: '#' },
+    { name: 'Cierre Diario', icon: <TbCashRegister  size={20} />, href: '#' },
     { name: 'Configuración', icon: <FaCog size={20} />, href: '#' },
   ];
 
@@ -44,7 +48,7 @@ export default function Sidebar() {
               <div>
                 <div className="hidden sm:flex items-center mb-8 pl-2.5 pt-2">
                     <div className="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">
-                        <FaBaby size={20} />
+                      <img className='' src="src/assets/estimula+sinfondo.png" alt="" />
                     </div>
                     <span className="self-center text-xl font-bold whitespace-nowrap text-gray-700">
                         Pequeños Pasos
