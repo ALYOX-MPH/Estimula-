@@ -47,11 +47,11 @@ export default function Sidebar() {
               {/* Logo Area (Desktop) & Menu */}
               <div>
                 <div className="hidden sm:flex items-center mb-8 pl-2.5 pt-2">
-                    <div className="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">
-                      <img className='' src="src/assets/estimula+sinfondo.png" alt="" />
+                    <div className="w-20 h-20 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">
+                      <img className='h-20 w-2xl' src="src/assets/estimula+sinfondo.png" alt="" />
                     </div>
-                    <span className="self-center text-xl font-bold whitespace-nowrap text-gray-700">
-                        Pequeños Pasos
+                    <span className="self-center border-b-3 border-blue-100 text-xl font-bold whitespace-nowrap text-gray-700">
+                        KidsFlow
                     </span>
                 </div>
     
