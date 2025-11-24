@@ -17,14 +17,14 @@ import { TbCashRegister } from 'react-icons/tb';
 import { HiOutlineDocumentReport } from 'react-icons/hi';
 
  const menuItems = [
-    { name: 'Inicio', icon: <FaThLarge size={20} />, href: '#', active: true },
-    { name: 'Niños / Expedientes', icon: <FaBaby size={20} />, href: '#' },
-    { name: 'Terapias y Actividades', icon: <FaPuzzlePiece size={20} />, href: '#' },
-    { name: 'Calendario / Citas', icon: <FaCalendarAlt size={20} />, href: '#' },
-    { name: 'Reportes de Progreso', icon: <FaFileAlt size={20} />, href: '#' },
-    { name: 'Reportes Generales', icon: <HiOutlineDocumentReport   size={20} />, href: '#' },
-    { name: 'Cierre Diario', icon: <TbCashRegister  size={20} />, href: '#' },
-    { name: 'Configuración', icon: <FaCog size={20} />, href: '#' },
+    { name: 'Inicio', icon: <FaThLarge size={20} />, href: '/', active: true },
+    { name: 'Niños / Expedientes', icon: <FaBaby size={20} />, href: '/kids' },
+    { name: 'Terapias y Actividades', icon: <FaPuzzlePiece size={20} />, href: '/therapy' },
+    { name: 'Calendario / Citas', icon: <FaCalendarAlt size={20} />, href: '/calendar' },
+    { name: 'Reportes de Progreso', icon: <FaFileAlt size={20} />, href: '/reports-progress' },
+    { name: 'Reportes Generales', icon: <HiOutlineDocumentReport   size={20} />, href: '/reports-general' },
+    { name: 'Cierre Diario', icon: <TbCashRegister  size={20} />, href: '/daily-close' },
+    { name: 'Configuración', icon: <FaCog size={20} />, href: '/settings' },
   ];
 
 export default function Sidebar() {

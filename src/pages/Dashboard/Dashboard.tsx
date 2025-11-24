@@ -1,34 +1,16 @@
-import { useState } from 'react';
+
 import { 
   FaCalendarAlt, 
   FaFileAlt, 
   FaBaby,
 } from 'react-icons/fa';
+
+
 import { FaPuzzlePiece } from 'react-icons/fa6';
 
-import Header from '../layout/header/Header.tsx';
-import Sidebar from '../layout/Sidebar/Sidebar.tsx';
-
-export default function AppRoutes() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
-
-
+export function Dashboard() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
-      
-      {/* --- MOBILE HEADER / TOGGLE BUTTON --- */}
-      <Header />
-
-      {/* --- SIDEBAR --- */}
-     <Sidebar />
-
-      {/* --- CONTENT AREA (El grid que estabas haciendo) --- */}
-      <div className="p-4 sm:ml-64 mt-14 sm:mt-0">
+    <div className="p-4 sm:ml-64 mt-14 sm:mt-0">
         <div className="p-6 border-2 border-gray-200 border-dashed rounded-xl bg-white/50">
             
             {/* Header del contenido */}
@@ -90,14 +72,5 @@ export default function AppRoutes() {
 
         </div>
       </div>
-
-      {/* Overlay para móvil (cierra el sidebar al hacer click fuera) */}
-      {isSidebarOpen && (
-        <div 
-            onClick={toggleSidebar}
-            className="fixed inset-0 bg-gray-900/50 z-30 sm:hidden"
-        ></div>
-      )}
-    </div>
   );
 }
