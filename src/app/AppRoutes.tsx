@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Dashboard } from "../pages/Dashboard/Dashboard";
+import { Kids } from "../pages/Kids/Kids";
+import { Therapy } from "../pages/Therapy/Therapy";
 import AdminLayout from "./AdminLayout";
 // Asumiendo que existen componentes para cada vista
 // import KidsPage from "./pages/KidsPage"; 
@@ -15,8 +17,8 @@ export default function AppRoutes() {
         <Route index element={<Dashboard />} />
 
         {/* Las 'path' de las rutas hijas no comienzan con / */}
-        <Route path="/kids" element={<div>Kids Page</div>} />
-        <Route path="therapy" element={<div>Therapy Page</div>} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/therapy" element={<Therapy />} />
         <Route path="calendar" element={<div>Calendar Page</div>} />
         <Route path="reports-progress" element={<div>Reports Progress Page</div>} />
         <Route path="reports-general" element={<div>Reports General Page</div>} />
